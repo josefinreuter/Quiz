@@ -1,0 +1,13 @@
+language: node_js
+node_js:
+- 8.11.1
+before_install:
+- cd ./quiz-backend
+deploy:
+  provider: heroku
+  skip_cleanup: true
+  api_key:
+    secure: K6WOkDKKrSZZW3/Lk+PWct9go/YrnxYO+qxUc/SKiRHNf2hc/smcacRqWv3gwa08zRf/rm/hZoWlVVhwezWrc1odDspWEOYDem2Z2sDEbU2QlJaU0qmVmEPX4yMJjq+4FHGCcUH5PL61G9kYtiofBV2QXGznVimlxE2k24q0P+Ozzxm6WTQ1yfCIu5j4mz7WFdHA0C+JWeYRFDPbDAi01YJMb23hjk+o6+IC5F2gN4Ueg0na63maBu+LnPx3fggH0M7TOhMXub/Qq+awtMrNnAS961EXJ4sEge4x6e9jVdD8BiByb4OQi/xA0V+jFHAmbVNZscWkO8ld7Ffe/zv0Ey8tepnv632L/HwpmAIWEjoAzDH6NTZD3nrATbm+o9rWxNPmWFCxMzg3Otg6mz5sGR7OFY9zML57wvB9KApHz+PwUuErYHbSzNDtivVYmU/B6TF06f4azM93CuJwfzZyqWxE9pV5hOjIE4FpWv+/xvVLJmHCgyPcolzdLbkqpFXt1WRfnVnK1XwjJosGO/r8ca+zj0QfeoxTc2cIKeRsKInW6tEWtoVaoaS0H9p8RhXUom64J2hJ976YazScgz6xyEAH/ZmE6rsrq7qiNqqwovNPZi399gmBTQ6kx7xilxb2ya2x9srcB0IDt7kcxcDnutEa5zMTOzTW5kWIzZauxP0=
+  app: kekkosvisa
+  on:
+    repo: josefinreuter/Quiz
