@@ -3,6 +3,9 @@ node_js:
 - 8.11.1
 before_install:
 - cd ./quiz-backend
+- chmod +x deploy-frontend.sh
+script:
+- ./deploy-frontend.sh
 deploy:
   provider: heroku
   skip_cleanup: true
